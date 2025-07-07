@@ -135,6 +135,7 @@
 				"trust": 30
 			}
 		},
+		"ext_relative_modifier": 4,
 		"rel_buff":{
 			"new_to_clan_cat": {
 				"romantic": 0,
