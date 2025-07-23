@@ -330,20 +330,6 @@ def json_load():
 
         cat.inheritance = Inheritance(cat)
 
-        try:
-            # initialization of thoughts
-            cat.thoughts()
-        except Exception as e:
-            logger.exception(
-                f"There was an error when thoughts for cat #{cat} are created."
-            )
-            switch_set_value(
-                Switch.error_message,
-                f"There was an error when thoughts for cat #{cat} are created.",
-            )
-            switch_set_value(Switch.traceback, e)
-            raise
-
         # Save integrety checks
         if constants.CONFIG["save_load"]["load_integrity_checks"]:
             save_check()

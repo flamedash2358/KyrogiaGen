@@ -11,9 +11,13 @@ TODO: Docs
 import os
 import statistics
 from random import choice, randint
+import logging
+
+logger = logging.getLogger(__name__)
 
 import pygame
 import ujson
+
 
 from scripts.cat.cats import Cat, cat_class
 from scripts.cat.enums import CatRank, CatGroup
@@ -229,7 +233,9 @@ class Clan:
             Cat.all_cats.get(cat_id).backstory = "clan_founder"
             if Cat.all_cats.get(cat_id).status.rank == CatRank.APPRENTICE:
                 Cat.all_cats.get(cat_id).rank_change(CatRank.APPRENTICE)
-            Cat.all_cats.get(cat_id).thoughts()
+            Cat.all_cats.get(cat_id).thoughts(
+                game_mode=self.game_mode, biome=self.biome, camp=self.camp_bg
+            )
 
         save_cats(game.clan.name, Cat, game)
         number_other_clans = randint(3, 5)
@@ -252,17 +258,6 @@ class Clan:
         self.save_clan()
         save_clanlist(self.name)
         switch_set_value(Switch.clan_list, read_clans())
-
-        # CHECK IF CAMP BG IS SET -fail-safe in case it gets set to None-
-        if switch_get_value(Switch.camp_bg) is None:
-            random_camp_options = ["camp1", "camp2"]
-            random_camp = choice(random_camp_options)
-            switch_set_value(Switch.camp_bg, random_camp)
-
-        # if no game mode chosen, set to Classic
-        if switch_get_value(Switch.game_mode) == "":
-            switch_set_value(Switch.game_mode, "classic")
-            self.game_mode = "classic"
 
         # set the starting season
         season_index = constants.SEASON_CALENDAR.index(self.starting_season)
@@ -722,6 +717,21 @@ class Clan:
             else "Newleaf"
         )
         get_current_season()
+
+        for cat in Cat.all_cats.values():
+            try:
+                # initialization of thoughts
+                cat.thoughts()
+            except Exception as e:
+                logger.exception(
+                    f"There was an error when thoughts for cat #{cat} are created."
+                )
+                switch_set_value(
+                    Switch.error_message,
+                    f"There was an error when thoughts for cat #{cat} are created.",
+                )
+                switch_set_value(Switch.traceback, e)
+                raise
 
         game.clan.leader_lives = leader_lives
         game.clan.leader_predecessors = clan_data["leader_predecessors"]

@@ -1504,7 +1504,14 @@ class Cat:
         if self.status.rank.is_any_apprentice_rank():
             self.update_mentor()
 
-    def thoughts(self, just_died=False, lives_left: int = 0):
+    def thoughts(
+        self,
+        just_died=False,
+        lives_left: int = 0,
+        game_mode=None,
+        biome=None,
+        camp=None,
+    ):
         """
         Generates a thought for the cat, which displays on their profile.
         :param just_died: Set True if the cat is generating a death thought
@@ -1513,9 +1520,14 @@ class Cat:
         all_cats = self.all_cats.copy()
         all_cats.pop(self.ID)
         other_cat = choice(list(all_cats.keys()))
-        game_mode = switch_get_value(Switch.game_mode)
-        biome = switch_get_value(Switch.biome)
-        camp = switch_get_value(Switch.camp_bg)
+        if game.clan:
+            if game_mode is None:
+                game_mode = game.clan.game_mode
+            if biome is None:
+                biome = game.clan.biome
+            if camp is None:
+                camp = game.clan.camp_bg
+
         try:
             season = game.clan.current_season
         except Exception:

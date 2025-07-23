@@ -49,12 +49,12 @@ class Thoughts:
 
         # This is for checking biome
         if "biome" in thought:
-            if biome not in thought["biome"]:
+            if biome.lower() not in thought["biome"]:
                 return False
 
         # This is checking for season
         if "season" in thought:
-            if season not in thought["season"]:
+            if season.lower() not in thought["season"]:
                 return False
 
         # This is for checking camp
