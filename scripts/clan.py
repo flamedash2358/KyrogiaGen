@@ -13,7 +13,7 @@ import statistics
 from random import choice, randint
 
 import pygame
-import ujson
+import scripts.json_shim as ujson
 
 from scripts.cat.cats import Cat, cat_class
 from scripts.cat.enums import CatRank, CatGroup

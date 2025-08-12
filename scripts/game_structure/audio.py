@@ -3,7 +3,7 @@ import random
 
 import pygame
 import pygame_gui
-import ujson
+import scripts.json_shim as ujson
 
 from scripts.game_structure.game.settings import game_setting_get, game_setting_set
 from scripts.game_structure.game_essentials import game

@@ -4,7 +4,7 @@ from math import floor
 from random import choice
 
 import i18n
-import ujson
+import scripts.json_shim as ujson
 
 from scripts.cat.cats import Cat, BACKSTORIES
 from ..cat.enums import CatGroup, CatRank

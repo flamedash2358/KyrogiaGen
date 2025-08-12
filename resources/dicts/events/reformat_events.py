@@ -1,4 +1,4 @@
-import json as ujson
+import scripts.json_shim as ujson
 import os
 import re
 

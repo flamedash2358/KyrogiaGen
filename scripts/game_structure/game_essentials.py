@@ -1,7 +1,7 @@
 from typing import Optional, TYPE_CHECKING
 
 import pygame
-import ujson
+import scripts.json_shim as ujson
 
 from scripts.event_class import Single_Event
 from scripts.game_structure import constants

@@ -1,6 +1,6 @@
 import os
 import unittest
-import ujson
+import scripts.json_shim as ujson
 
 from scripts.cat.enums import CatRank
 

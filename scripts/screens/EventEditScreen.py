@@ -5,7 +5,7 @@ from random import choice
 
 import pygame
 import pygame_gui
-import ujson
+import scripts.json_shim as ujson  # type: ignore
 
 from scripts.cat.cats import Cat, BACKSTORIES, create_option_preview_cat
 from scripts.cat.pelts import Pelt

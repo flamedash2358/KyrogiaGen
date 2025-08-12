@@ -3,7 +3,7 @@
 import random
 
 import i18n
-import ujson
+import scripts.json_shim as ujson
 
 from scripts.cat_relations.enums import RelType
 from scripts.events_module.event_filters import (

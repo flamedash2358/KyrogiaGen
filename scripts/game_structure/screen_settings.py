@@ -2,7 +2,7 @@ import logging
 import os.path
 from typing import TYPE_CHECKING
 
-import ujson
+import scripts.json_shim as ujson
 
 from scripts.game_structure.game.settings import (
     game_settings_save,

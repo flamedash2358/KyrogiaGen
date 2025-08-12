@@ -7,7 +7,7 @@ from re import sub
 import i18n
 import pygame
 import pygame_gui
-import ujson
+import scripts.json_shim as ujson
 
 from scripts.cat.cats import Cat, BACKSTORIES
 from scripts.clan_resources.freshkill import FRESHKILL_ACTIVE

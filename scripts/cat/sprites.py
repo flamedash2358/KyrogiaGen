@@ -3,7 +3,7 @@ import os
 from copy import copy
 
 import pygame
-import ujson
+import scripts.json_shim as ujson
 
 from scripts.cat.enums import CatGroup
 from scripts.game_structure import constants, image_cache

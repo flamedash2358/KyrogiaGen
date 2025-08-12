@@ -12,7 +12,7 @@ from random import choice, randint, sample, random, getrandbits, randrange
 from typing import Dict, List, Any, Union, Callable, Optional, TYPE_CHECKING
 
 import i18n
-import ujson  # type: ignore
+import scripts.json_shim as ujson  # type: ignore
 
 import scripts.game_structure.localization as pronouns
 from scripts.cat import save_load

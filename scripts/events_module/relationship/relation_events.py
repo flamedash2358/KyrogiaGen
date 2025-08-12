@@ -2,7 +2,7 @@ import os
 import random
 from random import choice, randint
 
-import ujson
+import scripts.json_shim as ujson
 
 from scripts.game_structure import constants
 from scripts.cat.cats import Cat

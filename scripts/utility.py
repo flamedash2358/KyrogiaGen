@@ -17,7 +17,7 @@ from typing import List, Tuple, TYPE_CHECKING, Type, Union, Optional
 
 import i18n
 import pygame
-import ujson
+import scripts.json_shim as ujson
 from pygame_gui.core import ObjectID
 
 from scripts.cat_relations.enums import RelType, RelTier, rel_type_tiers

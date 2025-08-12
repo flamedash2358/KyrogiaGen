@@ -1,6 +1,6 @@
 import os
 
-import ujson
+import scripts.json_shim as ujson
 
 
 # CHANGE THIS TO MAKE NEW LANGUAGE
