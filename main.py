@@ -182,7 +182,6 @@ for module_name, module in list(sys.modules.items()):
 
 # Load game
 from scripts.clan import clan_class
-from scripts.game_structure.audio import sound_manager, music_manager
 from scripts.game_structure.load_cat import load_cats, version_convert
 from scripts.game_structure.windows import SaveCheck
 from scripts.game_structure.screen_settings import screen_scale, MANAGER, screen
@@ -208,6 +207,7 @@ import pygame
 # import all screens for initialization (Note - must be done after pygame_gui manager is created)
 from scripts.screens.all_screens import AllScreens
 import scripts.game_structure.screen_settings
+from scripts.game_structure.audio.audio_manager import AudioManager
 
 # P Y G A M E
 clock = pygame.time.Clock()
@@ -328,20 +328,21 @@ def load_game():
 # load spritesheets
 sprites.load_all()
 load_game()
+game.audio = AudioManager()
 
 pygame.mixer.pre_init(buffer=44100)
 try:
     pygame.mixer.init()
 except pygame.error:
     print("Failed to initialize sound. Sound will be disabled.")
-    music_manager.audio_disabled = True
-    music_manager.muted = True
+    game.audio.disabled = True
+    game.audio.muted = True
 AllScreens.start_screen.screen_switches()
 
 # dev screen info now lives in scripts/screens/screens_core
 
 fps = switch_get_value(Switch.fps)
-music_manager.check_music("start screen")
+game.audio.music.check()
 
 if game_setting_get("custom cursor"):
     MANAGER.set_active_cursor(constants.CUSTOM_CURSOR)
@@ -371,7 +372,7 @@ while 1:
                 event
             )
 
-        sound_manager.handle_sound_events(event)
+        game.audio.sound.handle_sound_events(event)
 
         if event.type == pygame.QUIT:
             # Don't display if on the start screen or there is no clan.
@@ -428,12 +429,8 @@ while 1:
         getattr(AllScreens, game.last_screen_forupdate.replace(" ", "_")).exit_screen()
         getattr(AllScreens, game.current_screen.replace(" ", "_")).screen_switches()
         game.switch_screens = False
-    if (
-        not music_manager.audio_disabled
-        and not pygame.mixer.music.get_busy()
-        and not music_manager.muted
-    ):
-        music_manager.play_queued()
+    if not game.audio.disabled and not game.audio.muted:
+        game.audio.start()
 
     debug_mode.pre_update(clock)
     # END FRAME

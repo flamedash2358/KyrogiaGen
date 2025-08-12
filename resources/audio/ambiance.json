@@ -1,0 +1,10 @@
+{
+    "menu_playlist": ["menu_ambiance.mp3"],
+
+    "general_playlist": [],
+
+    "forest_playlist": [],
+    "plains_playlist": ["plains_ambiance_1.mp3"],
+    "beach_playlist": [],
+    "mountainous_playlist": ["mountain_ambiance_1.mp3", "mountain_ambiance_2.mp3"]
+}

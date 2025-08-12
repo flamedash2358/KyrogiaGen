@@ -12,7 +12,6 @@ from scripts.cat.cats import Cat
 from scripts.clan_package.settings import get_clan_setting
 from scripts.game_structure import image_cache, constants
 from scripts.cat.enums import CatGroup
-from scripts.game_structure.audio import music_manager
 from scripts.game_structure.game.settings import game_setting_get
 from scripts.game_structure.game.switches import (
     switch_set_value,
@@ -57,7 +56,6 @@ class Screens:
         It will handle keeping track of the last screen and cur screen.
         Last screen must be tracked to ensure a clear transition between screens."""
 
-        music_manager.check_music(new_screen)
         # self.exit_screen()
         game.last_screen_forupdate = self.name
 
@@ -85,12 +83,13 @@ class Screens:
             self.current_page = 1
 
         switch_set_value(Switch.cur_screen, new_screen)
+        game.audio.check()
         game.switch_screens = True
         game.rpc.update_rpc.set()
 
         if (
             game.last_screen_forupdate == "start screen"
-            and switch_get_value(Switch.cur_screen) not in constants.MENU_SCREENS
+            and switch_get_value(Switch.cur_screen) not in constants.MAIN_MENU_SCREENS
         ):
             rebuild_den_dropdown(
                 left_align=not get_clan_setting("moons and seasons"),
@@ -261,7 +260,7 @@ class Screens:
     def show_mute_buttons(cls):
         """This shows all mute buttons, and makes them interact-able."""
 
-        if music_manager.muted or music_manager.audio_disabled:
+        if game.audio.muted or game.audio.disabled:
             cls.menu_buttons["unmute_button"].show()
             cls.menu_buttons["mute_button"].hide()
         else:
@@ -272,13 +271,13 @@ class Screens:
         """This is a short-up to deal with mute button presses.
         This will fail if event.type != pygame_gui.UI_BUTTON_START_PRESS"""
         if event.ui_element == Screens.menu_buttons["mute_button"]:
-            music_manager.mute_music()
+            game.audio.mute()
             Screens.show_mute_buttons()
             return True
         elif event.ui_element == Screens.menu_buttons["unmute_button"]:
-            out = music_manager.unmute_music(self.name)
+            game.audio.unmute()
             Screens.show_mute_buttons()
-            return out
+            return True
         else:
             return False
 

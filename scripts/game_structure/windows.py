@@ -4,7 +4,6 @@ import subprocess
 import threading
 import time
 from collections import namedtuple
-from platform import system
 from random import choice
 from re import search as re_search
 from re import sub
@@ -18,7 +17,6 @@ from pygame_gui.elements import UIWindow
 from pygame_gui.windows import UIMessageWindow
 
 from scripts.cat.cats import Cat
-from scripts.cat.history import History
 from scripts.cat.names import Name
 from scripts.cat.save_load import save_cats
 from scripts.game_structure import image_cache
@@ -63,7 +61,6 @@ from scripts.utility import (
     ui_scale,
     quit,
     update_sprite,
-    logger,
     process_text,
     ui_scale_dimensions,
     ui_scale_offset,
@@ -338,6 +335,7 @@ class SaveCheck(UIWindow):
                     self.mm_btn.enable()
                     game.last_screen_forupdate = switch_get_value(Switch.cur_screen)
                     switch_set_value(Switch.cur_screen, "start screen")
+                    game.audio.check()
                     game.switch_screens = True
                     self.kill()
                 else:

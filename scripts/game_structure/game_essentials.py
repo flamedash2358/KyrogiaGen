@@ -97,6 +97,8 @@ class Game:
 
         self.clan: Optional["Clan"] = None
 
+        self.audio = None
+
         with open(f"resources/prey_config.json", "r", encoding="utf-8") as read_file:
             self.prey_config = ujson.loads(read_file.read())
 
