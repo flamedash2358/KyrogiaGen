@@ -13,7 +13,6 @@ import traceback
 
 import i18n
 
-from scripts.cat import save_load
 from scripts.cat.cats import Cat, cat_class, BACKSTORIES
 from scripts.cat.enums import CatAge, CatRank, CatGroup, CatStanding, CatSocial
 from scripts.cat.names import Name
@@ -100,6 +99,45 @@ class Events:
         # age up the clan, set current season
         game.clan.age += 1
         get_current_season()
+
+        # update afterlife tempers
+        for c in game.updated_afterlife_cats:
+            if not c.status.joined_group_this_moon:
+                continue
+
+            # only high ranks and guides can influence
+            if (
+                c.status.rank
+                not in (
+                    CatRank.LEADER,
+                    CatRank.MEDICINE_CAT,
+                    CatRank.DEPUTY,
+                )
+                and not game.clan.instructor
+            ):
+                continue
+
+            # first change facets of the group they joined
+            if (
+                c.status.group == CatGroup.STARCLAN
+                and c.ID not in game.starclan.influencing_cats
+            ):
+                game.starclan.adjust_facets_by_cat(c)
+                # then remove them from other afterlife, if they were there
+                if c.ID in game.dark_forest.influencing_cats:
+                    game.dark_forest.adjust_facets_by_cat(c, is_removal=True)
+
+            # now do same for DF
+            elif (
+                c.status.group == CatGroup.DARK_FOREST
+                and c.ID not in game.dark_forest.influencing_cats
+            ):
+                game.dark_forest.adjust_facets_by_cat(c)
+                if c.ID in game.starclan.influencing_cats:
+                    game.starclan.adjust_facets_by_cat(c, is_removal=True)
+
+        game.updated_afterlife_cats.clear()
+
         Pregnancy_Events.handle_pregnancy_age(game.clan)
         self.check_war()
 

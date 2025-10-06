@@ -11,6 +11,7 @@ TODO: Docs
 import os
 import statistics
 from random import choice, randint
+from typing import Optional
 
 import pygame
 import ujson
@@ -491,9 +492,21 @@ class Clan:
                 Switch.error_message, "There was an error loading the clan.json"
             )
 
+        # can't put this in post initialization bc guide isn't made before that func
+        self.load_guide_influence()
         load_clan_settings()
 
         return version_info
+
+    @staticmethod
+    def load_guide_influence():
+        """
+        Adds guide's facet influences to their current afterlife
+        """
+        if game.clan.instructor.status.group == CatGroup.STARCLAN:
+            game.starclan.adjust_facets_by_cat(game.clan.instructor)
+        elif game.clan.instructor.status.group == CatGroup.DARK_FOREST:
+            game.dark_forest.adjust_facets_by_cat(game.clan.instructor)
 
     def load_clan_txt(self):
         """
@@ -1236,22 +1249,7 @@ class Clan:
             print("returned default temper: stoic")
             return "stoic"
 
-        # _temperament = ['low_aggression', 'med_aggression', 'high_aggression', ]
-        if 11 <= clan_sociability:
-            _temperament = constants.TEMPERAMENT_DICT["high_social"]
-        elif 7 <= clan_sociability:
-            _temperament = constants.TEMPERAMENT_DICT["mid_social"]
-        else:
-            _temperament = constants.TEMPERAMENT_DICT["low_social"]
-
-        if 11 <= clan_aggression:
-            _temperament = _temperament[2]
-        elif 7 <= clan_aggression:
-            _temperament = _temperament[1]
-        else:
-            _temperament = _temperament[0]
-
-        return _temperament
+        return get_temper_alignment(clan_sociability, clan_aggression)
 
     @temperament.setter
     def temperament(self, val):
@@ -1309,41 +1307,150 @@ class OtherClan:
         return f"{self.name}Clan"
 
 
-class StarClan:
+class Afterlife:
     """
-    TODO: DOCS
+    Currently just used for tracking temperament & facets. All facets default to 8 if influencing_cats is empty.
     """
-
-    forgotten_stages = {
-        0: [0, 100],
-        10: [101, 200],
-        30: [201, 300],
-        60: [301, 400],
-        90: [401, 500],
-        100: [501, 502],
-    }  # Tells how faded the cat will be in StarClan by months spent
-    dead_cats = {}
 
     def __init__(self):
-        """
-        TODO: DOCS
-        """
-        self.instructor = None
+        self.influencing_cats: set[str] = set()
 
-    def fade(self, cat):
+        self._law: int = 0
+        self._social: int = 0
+        self._aggress: int = 0
+        self._stable: int = 0
+
+        self.total_aggression: int = 0
+        self.total_lawfulness: int = 0
+        self.total_sociability: int = 0
+        self.total_stability: int = 0
+
+    @property
+    def aggression(self) -> int:
+        if not self.influencing_cats:
+            return 8
+        else:
+            return self._aggress
+
+    @aggression.setter
+    def aggression(self, val):
+        self._aggress = val
+
+    @property
+    def sociability(self) -> int:
+        if not self.influencing_cats:
+            return 8
+        else:
+            return self._social
+
+    @sociability.setter
+    def sociability(self, val):
+        self._social = val
+
+    @property
+    def lawfulness(self) -> int:
+        if not self.influencing_cats:
+            return 8
+        else:
+            return self._law
+
+    @lawfulness.setter
+    def lawfulness(self, val):
+        self._law = val
+
+    @property
+    def stability(self) -> int:
+        if not self.influencing_cats:
+            return 8
+        else:
+            return self._stable
+
+    @stability.setter
+    def stability(self, val):
+        self._stable = val
+
+    @property
+    def temperament(self) -> str:
+        return get_temper_alignment(self.sociability, self.aggression)
+
+    def adjust_facets_by_cat(self, cat: Cat, is_removal: bool = False):
         """
-        TODO: DOCS
+        Adjusts the afterlife's facet averages according to the facets of the given cat
+        :param cat: The cat object adjust facets by
+        :param is_removal: Set True if the cat's facets are being removed from the afterlife's
         """
-        white = pygame.Surface((sprites.size, sprites.size))
-        fade_level = 0
-        if cat.dead:
-            for f in self.forgotten_stages:  # pylint: disable=consider-using-dict-items
-                if cat.dead_for in range(
-                    self.forgotten_stages[f][0], self.forgotten_stages[f][1]
-                ):
-                    fade_level = f
-        white.fill((255, 255, 255, fade_level))
-        return white
+
+        if is_removal:
+            self.influencing_cats.remove(cat.ID)
+        else:
+            self.influencing_cats.add(cat.ID)
+
+        num_of_influencers = len(self.influencing_cats)
+
+        if is_removal:
+            self.total_lawfulness -= cat.personality.lawfulness
+            self.total_sociability -= cat.personality.sociability
+            self.total_aggression -= cat.personality.aggression
+            self.total_stability -= cat.personality.stability
+        else:
+            self.total_lawfulness += cat.personality.lawfulness
+            self.total_sociability += cat.personality.sociability
+            self.total_aggression += cat.personality.aggression
+            self.total_stability += cat.personality.stability
+
+        self.lawfulness = self._adjust_average(
+            self.total_lawfulness,
+            num_of_influencers,
+        )
+
+        self.sociability = self._adjust_average(
+            self.total_sociability,
+            num_of_influencers,
+        )
+
+        self.aggression = self._adjust_average(
+            self.total_aggression,
+            num_of_influencers,
+        )
+
+        self.stability = self._adjust_average(
+            self.total_stability,
+            num_of_influencers,
+        )
+
+    @staticmethod
+    def _adjust_average(
+        total: int,
+        num_of_influencers: int,
+    ) -> int:
+        """
+        Handles the math for adjust averages.
+        :param total: The facet's total value derived from all influencing cats
+        :param num_of_influencers: The number of cats influencing the average
+        :return: The adjusted average
+        """
+        return total // num_of_influencers
+
+
+def get_temper_alignment(sociability: int, aggression: int) -> str:
+    """
+    Returns the temperament string associated with given sociability and aggression values
+    """
+    if 11 <= sociability:
+        _temperament = constants.TEMPERAMENT_DICT["high_social"]
+    elif 7 <= sociability:
+        _temperament = constants.TEMPERAMENT_DICT["mid_social"]
+    else:
+        _temperament = constants.TEMPERAMENT_DICT["low_social"]
+
+    if 11 <= aggression:
+        _temperament = _temperament[2]
+    elif 7 <= aggression:
+        _temperament = _temperament[1]
+    else:
+        _temperament = _temperament[0]
+
+    return _temperament
 
 
 clan_class = Clan()
