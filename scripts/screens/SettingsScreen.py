@@ -767,29 +767,40 @@ class SettingsScreen(Screens):
                 object_id="#english_lang_button",
                 manager=MANAGER,
             )
-            self.checkboxes["es"] = UISurfaceImageButton(
-                ui_scale(pygame.Rect((310, 0), (180, 37))),
-                "español",
-                get_button_dict(ButtonStyles.LADDER_MIDDLE, (180, 37)),
-                object_id="@buttonstyles_ladder_middle",
-                manager=MANAGER,
-                anchors={"top_target": self.checkboxes["en"]},
-            )
-            self.checkboxes["de"] = UISurfaceImageButton(
-                ui_scale(pygame.Rect((310, 0), (180, 37))),
-                "deutsch",
-                get_button_dict(ButtonStyles.LADDER_BOTTOM, (180, 37)),
-                object_id="@buttonstyles_ladder_bottom",
-                manager=MANAGER,
-                anchors={"top_target": self.checkboxes["es"]},
-            )
+            # dict insertion order is guaranteed in python 3.7+
+            additional_langs = {
+                "es": "español",
+                "de": "deustch",
+            }
+            prev_lang_checkbox = self.checkboxes["en"]
+
+            # sorry I don't know of a better way to implement this
+            if len(additional_langs) > 0:
+                *languages, last_lang = additional_langs.items()
+                for lang, native_name in languages:
+                    self.checkboxes[lang] = UISurfaceImageButton(
+                        ui_scale(pygame.Rect((310, 0), (180, 37))),
+                        native_name,
+                        get_button_dict(ButtonStyles.LADDER_MIDDLE, (180, 37)),
+                        object_id="@buttonstyles_ladder_middle",
+                        manager=MANAGER,
+                        anchors={"top_target": prev_lang_checkbox},
+                    )
+                    prev_lang_checkbox = self.checkboxes[lang]
+
+                lang, native_name = last_lang
+                self.checkboxes[lang] = UISurfaceImageButton(
+                    ui_scale(pygame.Rect((310, 0), (180, 37))),
+                    native_name,
+                    get_button_dict(ButtonStyles.LADDER_BOTTOM, (180, 37)),
+                    object_id="@buttonstyles_ladder_bottom",
+                    manager=MANAGER,
+                    anchors={"top_target": prev_lang_checkbox},
+                )
+
             language = MANAGER.get_locale()
-            if language == "en":  # English
-                self.checkboxes["en"].disable()
-            elif language == "es":  # Spanish
-                self.checkboxes["es"].disable()
-            elif language == "de":  # German
-                self.checkboxes["de"].disable()
+            if language in self.checkboxes:
+                self.checkboxes[language].disable()
 
         else:
             for i, (code, desc) in enumerate(settings_dict[self.sub_menu].items()):
