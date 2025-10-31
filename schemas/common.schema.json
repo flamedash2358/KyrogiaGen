@@ -420,6 +420,7 @@
       "anyOf": [
         {
           "enum": [
+              "strangers",
               "siblings",
               "not_siblings",
               "littermates",

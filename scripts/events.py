@@ -922,7 +922,7 @@ class Events:
             return
 
         if cat.dead:
-            cat.thoughts()
+            cat.get_new_thought()
             if cat.ID in game.just_died:
                 cat.moons += 1
             else:
@@ -986,7 +986,7 @@ class Events:
         # newborns don't do much
         if cat.status.rank == CatRank.NEWBORN:
             cat.relationship_interaction()
-            cat.thoughts()
+            cat.get_new_thought()
             return
 
         self.handle_apprentice_EX(cat)  # This must be before perform_ceremonies!
@@ -1007,7 +1007,7 @@ class Events:
             return
 
         cat.relationship_interaction()
-        cat.thoughts()
+        cat.get_new_thought()
 
         # relationships have to be handled separately, because of the ceremony name change
         if cat.status.alive_in_player_clan:
