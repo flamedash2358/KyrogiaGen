@@ -1,0 +1,60 @@
+{
+    "pl": {
+        "random_patrol": "losowy typ patrolu",
+        "training": "szkoleniowy",
+        "hunting": "myśliwski",
+        "border": "graniczny",
+        "herb_gathering": "zielarski",
+        "choose_cats_info": "Wybierz do sześciu kotów na patrol.\nKoty w mniejszych patrolach otrzymują więcej doświadczenia, ale większe patrole są bezpieczniejsze.",
+        "able_cats_label": "sprawne koty",
+        "patrol_label": "patrol",
+        "select": "wybierz",
+        "unavailable": "niedostępne",
+        "skills_traits_label": "umiejętności",
+        "remove_all_label": "usuń wszystkie",
+        "go_on_patrol": "wyślij patrol",
+        "current_prey": "obecna zwierzyna: %{prey}",
+        "needed_prey": "potrzebna zwierzyna: %{prey}",
+        "label_patrol_info": "przywódca patrolu: %{leader}\nczłonkowie: %{members}\numiejętności: %{skills}\ncechy: %{traits}",
+        "current_patrol_info": "umiejętności: %{skills}\ncechy: %{traits}",
+        "proceed": "postępuj",
+        "dont_proceed": "wycofaj się",
+        "antagonize": "antagonizuj",
+        "patrol_again": "kolejny patrol",
+        "back_to_clan": "wróć do obozu",
+        "dead_outsider": {
+            "one": "duch %{cats} teraz błądzi.",
+            "many": "duchy %{cats} teraz błądzą."
+        },
+        "met_outsider": "Patrol spotkał %{cats}.",
+        "new_outsider": "Patrol przyjął %{cats} do Klanu.",
+        "lost_cats": {
+            "one": "%{cats} zaginął.",
+            "many": "%{cats} zaginęli."
+        },
+        "outsider_rep_improved": "Reputacja Twojego Klanu wzrosła wśrod kotów poza Klanem.",
+        "outsider_rep_neutral": "Reputacja Twojego Klanu nie zmieniła się wśrod kotów poza Klanem.",
+        "outsider_rep_worsened": "Reputacja Twojego Klanu pogorszyła się wśrod kotów poza Klanem.",
+        "clan_rep_improved": "Relacje z %{clan} polepszyły się.",
+        "clan_rep_neutral": "Relacje z %{clan} są niezmienone.",
+        "clan_rep_worsened": "Relacje z %{clan} pogorszyły się.",
+        "herbs_gathered": {
+            "zero": "Nie znaleziono żadnych ziół.",
+            "one": "Zebrano %{herbs}.",
+            "many": "Zebrano %{herbs}."
+        },
+        "herb_log": {
+            "one": "%{herbs} zebrano na patrolu.",
+            "many": "%{herbs} zebrano na patrolu."
+        },
+        "prey_log": {
+            "one": "%{count} porcję upolowano na patrolu.",
+            "many": "%{count} porcji upolowano na patrolu."
+        },
+        "prey_very_small": "Upolowano bardzo małą ilość zwierzyny.",
+        "prey_small": "Upolowano małą ilość zwierzyny.",
+        "prey_medium": "Upolowano średnią ilość zwierzyny.",
+        "prey_large": "Upolowano dużą ilość zwierzyny.",
+        "prey_huge": "Upolowano ogromną ilość zwierzyny."
+    }
+}

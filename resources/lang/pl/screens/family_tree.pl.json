@@ -1,0 +1,18 @@
+{
+    "pl": {
+        "heading": "Rodzina %{name}",
+        "lineage": "Drzewo genealogiczne %{name}",
+        "no_cats": "Brak",
+        "parents": "rodzice",
+        "siblings": "rodzeństwo",
+        "siblings_mates": "partnerzy rodzeństwa",
+        "siblings_kits": "dzieci rodzeństwa",
+        "parents_siblings": "rodzeństwo rodziców",
+        "cousins": "kuzyni",
+        "grandparents": "dziadkowie",
+        "mates": "partnerzy",
+        "kits": "dzieci",
+        "kits_mates": "partnerzy dzieci",
+        "grandkits": "wnuki"
+    }
+}

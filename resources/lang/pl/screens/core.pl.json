@@ -1,0 +1,19 @@
+{
+    "pl": {
+        "events": "Wydarzenia",
+        "camp": "Obóz",
+        "cat_list": "Koty",
+        "patrol": "Patrol",
+        "allegiances": "Spis Kotów",
+        "settings": "Opcje",
+        "dens": "Legowiska",
+        "warriors_den": "legowisko wojowników",
+        "leader_den": "legowisko przywódcy",
+        "medicine_cat_den": "legowisko medyka",
+        "elders_den": "legowisko starszyzny",
+        "nursery": "żłobek",
+        "clearing": "centrum obozu",
+        "apprentices_den": "legowisko uczniów",
+        "dev_watermark": "Dev Build: %{ver}"
+    }
+}

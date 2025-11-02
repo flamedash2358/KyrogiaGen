@@ -1,0 +1,19 @@
+{
+    "pl": {
+        "heading": "Skocz dalej w czasie, by zobaczyć postęp życia Klanu.",
+        "season": "Pora roku: %{season}",
+        "age": {
+            "one": "Wiek Klanu: %{count} księżyc",
+            "many": "Wiek Klanu: %{count} księżyców"
+        },
+        "timeskip_button": "Następny Księżyc",
+        "all events": "wszystkie",
+        "ceremonies": "ceremonie",
+        "births & deaths": "narodziny i zgony",
+        "relationships": "relacje",
+        "health": "zdrowie",
+        "other clans": "inne klany",
+        "miscellaneous": "inne",
+        "no_events": "Nic interesującego nie stało się w tym księżycu."
+    }
+}

@@ -1,0 +1,216 @@
+{
+    "pl": {
+        "moons_age": {
+            "one": "1 księżyc",
+            "many": "%{count} księżyców"
+        },
+        "moons_age_in_death": {
+            "one": "1 księżyc (w śmierci)",
+            "many": "%{count} księżyców (w śmierci)"
+        },
+        "moons_age_in_life": {
+            "one": "1 księżyc (w życiu)",
+            "many": "%{count} księżyców (w życiu)"
+        },
+        "moon_date": "księżyc %{moon}",
+        "leader": {
+            "one": "przywódca",
+            "many": "przywódcy"
+        },
+        "deputy": {
+            "one": "zastępca",
+            "many": "zastępcy"
+        },
+        "warrior": {
+            "one": "wojownik",
+            "many": "wojownicy"
+        },
+        "medicine cat": {
+            "one": "medyk",
+            "many": "medycy"
+        },
+        "mediator": {
+            "one": "mediator",
+            "many": "mediatorzy"
+        },
+        "apprentice": {
+            "one": "uczeń",
+            "many": "uczniowie"
+        },
+        "medicine cat apprentice": {
+            "one": "uczeń medyka",
+            "many": "uczniowie medyka"
+        },
+        "mediator apprentice": {
+            "one": "uczeń mediatora",
+            "many": "uczniowie mediatora"
+        },
+        "queen": {
+            "one": "karmicielka",
+            "many": "karmicielki"
+        },
+        "queen\/pregnant": {
+            "one": "karmicielka\/ciężarny kot",
+            "many": "karmicielki\/ciężarne koty"
+        },
+        "newborn": {
+            "one": "noworodek",
+            "many": "noworodki"
+        },
+        "kitten": {
+            "one": "kociak",
+            "many": "kociaki"
+        },
+        "kitten_profile": "młody",
+        "adolescent": "młodociany",
+        "young adult": "młody dorosły",
+        "adult": "dorosły",
+        "senior adult": "starszy dorosły",
+        "senior": "senior",
+        "kit": {
+            "one": "kociak",
+            "many": "kociaki"
+        },
+        "elder": {
+            "one": "starszyzna",
+            "many": "starszyzna"
+        },
+        "loner": {
+            "one": "samotnik",
+            "many": "samotnicy"
+        },
+        "rogue": {
+            "one": "włóczęga",
+            "many": "włóczędzy"
+        },
+        "kittypet": {
+            "one": "kot domowy",
+            "many": "koty domowe"
+        },
+        "former Clancat": {
+            "one": "dawny członek Klanu",
+            "many": "dawni członkowie Klanu"
+        },
+        "exiled": {
+            "one": "wygnany",
+            "many": "wygnani"
+        },
+        "lost": "zagubiony",
+        "mate": {
+            "one": "partner",
+            "many": "partnerzy"
+        },
+        "she-cat": "kotka",
+        "tom": "kocur",
+        "cat": "kot",
+        "female": "samiczka",
+        "male": "samiec",
+        "trans female": "samiczka (trans)",
+        "trans male": "samiec (trans)",
+        "nonbinary": "niebinarne",
+        "is": "jest",
+        "are": "są",
+        "can_work": "Jest w stanie pracować",
+        "cant_work": "Nie jest w stanie pracować",
+        "cant_work_condition": "Nie jest w stanie pracować",
+        "exp_label": "doświadczenie: %{exp}",
+        "newleaf": "pora nowych liści",
+        "Newleaf": "Pora nowych liści",
+        "greenleaf": "pora zielonych liści",
+        "Greenleaf": "Pora zielonych liści",
+        "leaf-fall": "pora opadających liści",
+        "Leaf-fall": "Pora opadających liści",
+        "leaf-bare": "pora nagich drzew",
+        "Leaf-bare": "Pora nagich drzew",
+        "relation_BLOOD": "",
+        "relation_ADOPTIVE": "adoptowany",
+        "relation_HALF_BLOOD": "przyrodnie rodzeństwo",
+        "relation_NOT_BLOOD": "nie spokrewniony",
+        "relation_RELATED": "spokrewniony",
+        "related_label": "%{relation}",
+        "niece": "dziecko rodzeństwa",
+        "nephew": "dziecko rodzeństwa",
+        "siblings_child": "dziecko rodzeństwa",
+        "aunt": "ciotka",
+        "uncle": "wuj",
+        "parents_sibling": "rodzeństwo rodzica",
+        "grandmother": "babcia",
+        "grandfather": "dziadek",
+        "grandparent": "dziabko",
+        "granddaughter": "wnuczka",
+        "grandson": "wnuk",
+        "grandchild": "wnuczę",
+        "mother": "matka",
+        "father": "ojciec",
+        "parent": "rodzic",
+        "daughter": "córka",
+        "son": "syn",
+        "child": "dziecko",
+        "sister": "siostra",
+        "brother": "brat",
+        "sibling": "rodzeństwo",
+        "sibling_littermate": "%{relation}",
+        "cousin_male": "kuzyn",
+        "cousin_female": "kuzynka",
+        "cousin_nb": "kuzynostwo",
+        "starclan": "Klan Gwiazdy",
+        "dark_forest": "Mroczna Puszcza",
+        "unknown_residence": "Nieznany Pobyt",
+        "your_clan": "Twój Klan",
+        "cotc": "Koty poza Klanem",
+        "empty": "pusty",
+        "none": "żadne",
+        "name_search": "szukaj po imieniu",
+        "has_a_mate": "ma partnera",
+        "cats_mate": "partner %{name}",
+        "mate_none": "partner: brak",
+        "mate_living": "(żywy)",
+        "mate_dead": "(martwy)",
+        "mate_away": "(zaginiony)",
+        "mate_label": {
+            "one": "partner: %{mates}",
+            "many": "partnerzy: %{mates}"
+        },
+        "mate_extra": {
+            "one": "1 inny",
+            "many": "%{count} inni"
+        },
+        "mentor": {
+            "one": "mentor",
+            "many": "mentorzy"
+        },
+        "mentor_label": "mentor: %{mentor}",
+        "apprentice_label": {
+            "zero": "",
+            "one": "uczeń: %{apprentices}",
+            "many": "uczniowie: %{apprentices}"
+        },
+        "former_apprentice_label": {
+            "one": "dawny uczeń: %{apprentices}",
+            "many": "dawni uczniowie: %{apprentices}"
+        },
+        "apprentice_extra": {
+            "zero": "",
+            "one": "1 inny",
+            "many": "%{count} inni"
+        },
+        "dead_label": "%{name} (martwy)",
+        "mark_favorite": "Zaznacz jako ulubiony",
+        "remove_favorite": "Usuń z ulubionych",
+        "has_permanent_condition": "ma niepełnosprawność lub chorobę trwałą",
+        "born_with": "wrodzone",
+        "had_perm_condition_for": {
+            "one": "%{count} księżyc",
+            "many": "%{count} księżyców"
+        },
+        "had_injury_for": "przez %{moons}",
+        "pregnant_for": "w ciąży %{moons}",
+        "recovering_from_birth_for": "odzyskuje siły po ciąży %{moons}",
+        "sick": "chory",
+        "injured": "ranny",
+        "grieving": "w żałobie",
+        "fleas": "zapchlony",
+        "is_infected": "infekcja",
+        "is_festering": "jątrzenie"
+    }
+}
