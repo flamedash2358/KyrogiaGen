@@ -1,6 +1,6 @@
 {
     "en": {
-        "help_tooltip": "This screen allows you to check on the other cats who live nearby, both Outsiders and other Clan cats.  You can control how the leader of your Clan will treat other leaders at Gatherings, but keep in mind that you can only determine one interaction each moon! Likewise, you can consider whether to drive out or invite in Outsider cats.  If you drive out a cat, they will no longer appear in the Cats Outside the Clans list.  If you invite a cat in, they might join your Clan!",
+        "help_tooltip": "This screen allows you to check on the other dragons who live nearby, both Outsiders and other Clan dragons.  You can control how the leader of your Clan will treat other leaders at Gatherings, but keep in mind that you can only determine one interaction each moon! Likewise, you can consider whether to drive out or invite in Outsider dragons.  If you drive out a dragon, they will no longer appear in the Dragons Outside the Clans list.  If you invite a dragon in, they might join your Clan!",
         "clans": "Clans",
         "outsiders": "Outsiders",
         "clan_notice_text": {
@@ -52,11 +52,11 @@
         "appease": "appease",
         "declare": "declare",
         "hunt": "hunt down",
-        "hunt_tooltip": "This cat will be killed if found.",
+        "hunt_tooltip": "This dragon will be killed if found.",
         "drive": "drive off",
-        "drive_tooltip": "This cat will be driven out of the area if found ({PRONOUN/r_c/subject} will no longer be accessible in-game).",
+        "drive_tooltip": "This dragon will be driven out of the area if found ({PRONOUN/r_c/subject} will no longer be accessible in-game).",
         "invite": "invite in",
         "search": "search for",
-        "invite_tooltip": "This cat will join the Clan if found."
+        "invite_tooltip": "This dragon will join the Clan if found."
     }
 }
