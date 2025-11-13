@@ -30,74 +30,74 @@
             "many": "warriors"
         },
         "medicine cat": {
-            "one": "medicine cat",
-            "many": "medicine cats"
+            "one": "medic",
+            "many": "medics"
         },
         "mediator": {
-            "one": "mediator",
-            "many": "mediators"
+            "one": "diplomat",
+            "many": "diplomats"
         },
         "apprentice": {
-            "one": "apprentice",
-            "many": "apprentices"
+            "one": "trainee",
+            "many": "trainees"
         },
         "medicine cat apprentice": {
-            "one": "medicine cat apprentice",
-            "many": "medicine cat apprentices"
+            "one": "medic trainee",
+            "many": "medic trainees"
         },
         "mediator apprentice": {
-            "one": "mediator apprentice",
-            "many": "mediator apprentices"
+            "one": "diplomat trainee",
+            "many": "diplomat trainees"
         },
         "queen": {
             "one": "queen",
             "many": "queens"
         },
         "queen/pregnant": {
-            "one": "queen/pregnant cat",
-            "many": "queens/pregnant cats"
+            "one": "queen/gravid dragon",
+            "many": "queens/gravid dragons"
         },
         "newborn": {
-            "one": "newborn",
-            "many": "newborns"
+            "one": "egg",
+            "many": "eggs"
         },
         "kitten": {
-            "one": "kitten",
-            "many": "kittens"
+            "one": "hatchling",
+            "many": "hatchlings"
         },
-        "kitten_profile": "young",
-        "adolescent": "adolescent",
+        "kitten_profile": "hatchling",
+        "adolescent": "dragonet",
         "young adult": "young adult",
         "adult": "adult",
         "senior adult": "senior adult",
         "senior": "senior",
         "kit": {
-            "one": "kit",
-            "many": "kits"
+            "one": "egg",
+            "many": "eggs"
         },
         "elder": {
             "one": "elder",
             "many": "elders"
         },
         "loner": {
-            "one": "loner",
-            "many": "loners"
+            "one": "wanderer",
+            "many": "wanderers"
         },
         "rogue": {
-            "one": "rogue",
-            "many": "rogues"
+            "one": "harbinger",
+            "many": "harbingers"
         },
         "kittypet": {
-            "one": "kittypet",
-            "many": "kittypets"
+            "one": "star-pet",
+            "many": "star-pets"
         },
         "former Clancat": {
-            "one": "former Clancat",
-            "many": "former Clancats"
+            "one": "former Clandragon",
+            "many": "former Clandragons"
         },
         "clancat": {
-            "one": "Clancat",
-            "many": "Clancats"
+            "one": "Clandragon",
+            "many": "Clandragons"
         },
         "exiled": {
             "one": "exiled from",
@@ -108,9 +108,9 @@
             "one": "mate",
             "many": "mates"
         },
-        "she-cat": "she-cat",
+        "she-cat": "she-dragon",
         "tom": "tom",
-        "cat": "cat",
+        "cat": "dragon",
         "female": "female",
         "male": "male",
         "trans female": "trans female",
@@ -118,8 +118,8 @@
         "nonbinary": "nonbinary",
         "is": "is",
         "are": "are",
-        "can_work": "This cat can work",
-        "cant_work": "This cat isn't able to work",
+        "can_work": "This dragon can work",
+        "cant_work": "This dragon isn't able to work",
         "cant_work_condition": "Can't work with this condition",
         "exp_label": "exp: %{exp}",
         "newleaf": "newleaf",
@@ -163,11 +163,11 @@
         "cousin_female": "cousin",
         "cousin_nb": "cousin",
         "clan": "%{name}Clan",
-        "starclan": "StarClan",
-        "dark_forest": "Dark Forest",
-        "unknown_residence": "Unknown Residence",
+        "starclan": "Wyrm's Sanctuary",
+        "dark_forest": "Cosmic Void",
+        "unknown_residence": "Unbound Souls",
         "your_clan": "Your Clan",
-        "cotc": "Cats Outside the Clan",
+        "cotc": "Dragons Outside the Clan",
         "empty": "empty",
         "none": "none",
         "name_search": "name search",
@@ -192,12 +192,12 @@
         "mentor_label": "mentor: %{mentor}",
         "apprentice_label": {
             "zero": "",
-            "one": "apprentice: %{apprentices}",
-            "many": "apprentices: %{apprentices}"
+            "one": "trainee: %{apprentices}",
+            "many": "trainees: %{apprentices}"
         },
         "former_apprentice_label": {
-            "one": "former apprentice: %{apprentices}",
-            "many": "former apprentices: %{apprentices}"
+            "one": "former trainee: %{apprentices}",
+            "many": "former trainees: %{apprentices}"
         },
         "apprentice_extra": {
             "zero": "",
@@ -214,12 +214,12 @@
             "many": "has had this condition for %{count} moons"
         },
         "had_injury_for": "has been hurt for %{moons}",
-        "pregnant_for": "has been pregnant for %{moons}",
+        "pregnant_for": "has been gravid for %{moons}",
         "recovering_from_birth_for": "has been recovering for %{moons}",
         "sick": "sick",
         "injured": "injured",
         "grieving": "grieving",
-        "fleas": "flea-ridden",
+        "fleas": "tick-ridden",
         "is_infected": "is infected",
         "is_festering": "is festering"
     }
