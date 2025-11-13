@@ -33,7 +33,7 @@
         ],
         "custom cursor": [
             "Custom cursor",
-            "The cursor will be replaced with a cat paw. The cursor is currently unfinished and is prone to crashing.",
+            "The cursor will be replaced with a dragon talon. The cursor is currently unfinished and is prone to crashing.",
             false
         ],
         "keybinds": [
@@ -43,7 +43,7 @@
         ],
         "shaders": [
             "Enable Shaders",
-            "This will add a shading layer onto the cat sprites.",
+            "This will add a shading layer onto the dragon sprites.",
             false
         ],
         "gore": [
@@ -58,7 +58,7 @@
         ],
         "check_for_updates": [
             "Check for updates",
-            "Automatically checks for updates on startup",
+            "Automatically checks for updates on startup, currently broken!",
             true
         ],
         "show_changelog": [
@@ -73,12 +73,12 @@
         ],
         "random relation": [
             "Randomize relationship values when creating Clan",
-            "Clan founder cats will start the game with established relationships.",
+            "Clan founder dragons will start the game with established relationships.",
             true
         ],
         "they them default": [
             "Use they/them as default pronouns",
-            "If this setting is on new cats will generate with they/them pronouns, regardless of gender.",
+            "If this setting is on new dragons will generate with they/them pronouns, regardless of gender.",
             false
         ]
     },
