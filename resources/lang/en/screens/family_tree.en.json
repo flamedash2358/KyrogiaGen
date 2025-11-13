@@ -6,13 +6,13 @@
         "parents": "parents",
         "siblings": "siblings",
         "siblings_mates": "siblings' mates",
-        "siblings_kits": "siblings' kits",
+        "siblings_kits": "siblings' hatchlings",
         "parents_siblings": "parents' siblings",
         "cousins": "cousins",
         "grandparents": "grandparents",
         "mates": "mates",
-        "kits": "kits",
-        "kits_mates": "kits' mates",
-        "grandkits": "grandkits"
+        "kits": "hatchlings",
+        "kits_mates": "hatchlings' mates",
+        "grandkits": "grandhatchlings"
     }
 }
