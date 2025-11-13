@@ -9,7 +9,7 @@
             "many": "blood parents: %{name}"
         },
         "mate_of_inter": "mate of %{name}",
-        "littermates": "litter mates",
+        "littermates": "egg mates",
         "child_of_inter": "child of %{name}"
     }
 }
