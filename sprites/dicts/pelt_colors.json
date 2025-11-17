@@ -1,0 +1,33 @@
+{ 
+  "pelt_colors": {
+    "RUBY": "ruby",
+    "GARNET": "garnet",
+    "AMBER": "amber",
+    "TOPAZ": "topaz",
+    "SULFUR": "sulfur",
+    "PYRITE": "pyrite",
+    "PERIDOT": "peridot",
+    "EMERALD": "emerald",
+    "AQUAMARINE": "aquamarine",
+    "SAPHIRE": "saphire",
+    "LAPIS": "lapis",
+    "AMETHYST": "amethyst",
+    "CHAROITE": "charoite",
+    "SPINEL": "spinel",
+    "RHODOCHROSITE": "rhodochrosite",
+    "OBSIDIAN": "obsidian",
+    "PEARL": "pearl",
+    "QUARTZ": "quartz",
+    "OPAL": "opal",
+    "MAGNETITE": "magnetite",
+    "DIAMOND": "diamond",
+    "ONYX": "onyx"
+  }
+  "possible_colors": {
+    "ruby": ["red", "crimson", "pink", "rose"],
+    "garnet": ["all the colors"],
+    "amber": ["yellow", "orange", "red", "brown"],
+    "topaz": ["blue", "yellow", "orange", "red", "black", "silver", "indigo"],
+    "sulfur": ["yellow", "orange", "red", "crimson", "brown", "gold"]
+  }
+}
