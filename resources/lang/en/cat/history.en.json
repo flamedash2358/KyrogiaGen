@@ -1,9 +1,9 @@
 {
     "en": {
-        "training_kit": "This cat has not begun training.",
-        "training_app": "This cat has not finished training.",
+        "training_kit": "This dragon has not begun training.",
+        "training_app": "This dragon has not finished training.",
         "training_mentors": {
-            "zero": "This cat either did not have a mentor, or {PRONOUN/m_c/poss} mentor is unknown.",
+            "zero": "This dragon either did not have a mentor, or {PRONOUN/m_c/poss} mentor is unknown.",
             "one": "{PRONOUN/m_c/subject/CAP} {VERB/m_c/were/was} mentored by %{mentors}.",
             "many": "{PRONOUN/m_c/subject/CAP} {VERB/m_c/were/was} mentored by %{mentors}."
         },
@@ -52,12 +52,12 @@
         "murder_not_revealed_to_clan": "The Clan is unaware.",
         "murder_revealed_to_individual": "%{name} knows.",
         "leader_lives_left_df": {
-            "zero": "The leader has no lives left and has travelled to the Dark Forest.",
+            "zero": "The leader has no lives left and has travelled to the Cosmic Void.",
             "one": "The leader has one life left.",
             "many": "The leader has %{count} lives left."
         },
         "leader_lives_left_sc": {
-            "zero": "The leader has no lives left and has travelled to StarClan.",
+            "zero": "The leader has no lives left and has travelled to The Great Wyrm's Paradise.",
             "one": "The leader has one life left.",
             "many": "The leader has %{count} lives left."
         },
