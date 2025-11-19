@@ -28,6 +28,42 @@
     "garnet": ["all the colors"],
     "amber": ["yellow", "orange", "red", "brown"],
     "topaz": ["blue", "yellow", "orange", "red", "black", "silver", "indigo"],
-    "sulfur": ["yellow", "orange", "red", "crimson", "brown", "gold"]
+    "sulfur": ["yellow", "orange", "red", "crimson", "brown", "gold"],
+    "pyrite": ["gold", "silver", "blue", "teal"],
+    "peridot": ["lime", "green", "olive"],
+    "emerald": ["green", "teal", "cyan"],
+    
+  }
+  "color_base_values": {
+    "red": [],
+    "crimson": [],
+    "orange": [],
+    "brown": [],
+    "yellow-orange": [],
+    "yellow": [],
+    "gold": [],
+    "lime": [],
+    "olive": [],
+    "green": [],
+    "dark green": [],
+    "teal": [],
+    "dark teal": [],
+    "blue": [],
+    "dark blue": [],
+    "indigo": [],
+    "dark indigo": [],
+    "purple": [],
+    "dark purple": [],
+    "magenta": [],
+    "dark magenta": [],
+    "pink": [],
+    "dark pink": [],
+    "rose": [],
+    "dark rose": [],
+    "black": [],
+    "silver": [],
+    "white": [],
+    "albino": [],
+    "melanistic": []
   }
 }
