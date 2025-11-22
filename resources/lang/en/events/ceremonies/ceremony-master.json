@@ -1465,7 +1465,7 @@
         "clanborn",
         "all_traits"
     ],
-        "(previous_mentor) still remembers when (old_name) was just a kit batting around in the medicine cat den, asking endless questions about everything under the sun. (previous_mentor) chuckles with fondness as m_c asks why {PRONOUN/m_c/poss} new name was chosen with shining eyes and twitching whiskers."
+        "(previous_mentor) still remembers when (old_name) was just a hatchling batting around in the medics' den, asking endless questions about everything under the sun. (previous_mentor) chuckles with fondness as m_c asks why {PRONOUN/m_c/poss} new name was chosen with shining eyes and twitching whiskers."
     ],
     "med_7_abandoned": [
         [
@@ -1477,7 +1477,7 @@
             "abandoned",
       "all_traits"
     ],
-        "(previous_mentor) still remembers when (old_name) was just a kit batting around in the medicine cat den, asking endless questions about everything under the sun. (previous_mentor) chuckles with fondness as m_c asks why {PRONOUN/m_c/poss} new name was chosen with shining eyes and twitching whiskers."
+        "(previous_mentor) still remembers when (old_name) was just a hatchling batting around in the medics' den, asking endless questions about everything under the sun. (previous_mentor) chuckles with fondness as m_c asks why {PRONOUN/m_c/poss} new name was chosen with shining eyes and twitching whiskers."
   ],
   "med_8": [
     [
@@ -1489,7 +1489,7 @@
       "general_backstory",
       "all_traits"
     ],
-    "(old_name) is taken to speak with StarClan. {PRONOUN/m_c/subject/CAP} {VERB/m_c/are/is} given the name m_c and {VERB/m_c/are/is} now a full medicine cat of the Clan."
+    "(old_name) is taken to speak with The Great Wyrm. {PRONOUN/m_c/subject/CAP} {VERB/m_c/are/is} given the name m_c and {VERB/m_c/are/is} now a full medic of the Clan."
   ],
   "med_9": [
     [
@@ -1501,7 +1501,7 @@
       "general_backstory",
       "all_traits"
     ],
-    "The time has come for (old_name) to be given {PRONOUN/m_c/poss} full medicine cat name. (old_name) requests that one of the other Clans' medicine cats name {PRONOUN/m_c/object}. The eldest of the medicine cats steps forward and gives (old_name) the name m_c."
+    "The time has come for (old_name) to be given {PRONOUN/m_c/poss} full medic name. (old_name) requests that one of the other Clans' medics name {PRONOUN/m_c/object}. The eldest of the medics steps forward and gives (old_name) the name m_c."
   ],
   "med_10": [
     [
@@ -1513,7 +1513,7 @@
       "general_backstory",
       "all_traits"
     ],
-    "With {PRONOUN/m_c/poss} training complete, StarClan decides to allow (old_name) to choose {PRONOUN/m_c/poss} own name. {PRONOUN/m_c/subject/CAP} {VERB/m_c/name/names} {PRONOUN/m_c/self} m_c, and {VERB/m_c/return/returns} to the Clan the next morning as a full medicine cat."
+    "With {PRONOUN/m_c/poss} training complete, The Great Wyrm decides to allow (old_name) to choose {PRONOUN/m_c/poss} own name. {PRONOUN/m_c/subject/CAP} {VERB/m_c/name/names} {PRONOUN/m_c/self} m_c, and {VERB/m_c/return/returns} to the Clan the next morning as a full medic."
   ],
   "med_11": [
     [
@@ -1525,7 +1525,7 @@
       "general_backstory",
       "adventurous"
     ],
-    "As much as the warrior apprentices teased, (old_name) knew the truth. There is so much to see and do as a full medicine cat and m_c could hardly wait to get started, almost charging off before {PRONOUN/m_c/poss} ceremony ended."
+    "As much as the warrior apprentices teased, (old_name) knew the truth. There is so much to see and do as a full medic and m_c could hardly wait to get started, almost charging off before {PRONOUN/m_c/poss} ceremony ended."
   ],
   "med_12": [
     [
@@ -1537,7 +1537,7 @@
       "general_backstory",
       "compassionate"
     ],
-    "Helping cats heal is what (old_name) does best. {PRONOUN/m_c/poss/CAP} full name of m_c proves to the Clan that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} fully qualified to do so, and that StarClan has accepted {PRONOUN/m_c/object}."
+    "Helping dragons heal is what (old_name) does best. {PRONOUN/m_c/poss/CAP} full name of m_c proves to the Clan that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} fully qualified to do so, and that The Great Wyrm has accepted {PRONOUN/m_c/object}."
   ],
   "med_13": [
     [
@@ -1549,7 +1549,7 @@
       "general_backstory",
       "ambitious"
     ],
-    "As {PRONOUN/m_c/subject} {VERB/m_c/take/takes} {PRONOUN/m_c/poss} first steps into being a full medicine cat, (old_name) quietly reflects that {PRONOUN/m_c/subject} might just have the most powerful position in the Clan, now that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} m_c. StarClan itself has accepted {PRONOUN/m_c/object}, speaks through {PRONOUN/m_c/object}... and m_c will remember this."
+    "As {PRONOUN/m_c/subject} {VERB/m_c/take/takes} {PRONOUN/m_c/poss} first steps into being a full medic, (old_name) quietly reflects that {PRONOUN/m_c/subject} might just have the most powerful position in the Clan, now that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} m_c. The Great Wyrm itself has accepted {PRONOUN/m_c/object}, speaks through {PRONOUN/m_c/object}... and m_c will remember this."
   ],
   "med_14": [
     [
@@ -1561,7 +1561,7 @@
       "general_backstory",
       "bloodthirsty"
     ],
-    "StarClan gives {PRONOUN/m_c/object} wisdom, {PRONOUN/m_c/poss} Clan gives {PRONOUN/m_c/object} strength. (old_name) will use this power to heal {PRONOUN/m_c/poss} warriors well after battle. {PRONOUN/m_c/subject/CAP} {VERB/m_c/are/is} now m_c, and {VERB/m_c/swear/swears} to never turn away from what needs doing."
+    "The Great Wyrm gives {PRONOUN/m_c/object} wisdom, {PRONOUN/m_c/poss} Clan gives {PRONOUN/m_c/object} strength. (old_name) will use this power to heal {PRONOUN/m_c/poss} warriors well after battle. {PRONOUN/m_c/subject/CAP} {VERB/m_c/are/is} now m_c, and {VERB/m_c/swear/swears} to never turn away from what needs doing."
   ],
   "med_15": [
     [
@@ -1575,7 +1575,7 @@
       "arrogant",
       "rebellious"
     ],
-    "(old_name) may have butted heads with nearly every Clan member there is, but being able to argue was a blessing as a medicine cat. m_c will have to continue shoving odd mixtures down everyone's throats, after all. StarClan will be watching {PRONOUN/m_c/object} with pride."
+    "(old_name) may have butted heads with nearly every Clan member there is, but being able to argue was a blessing as a medic. m_c will have to continue shoving odd mixtures down everyone's throats, after all. The Great Wyrm will be watching {PRONOUN/m_c/object} with pride."
   ],
   "med_16": [
     [
@@ -1587,7 +1587,7 @@
       "general_backstory",
       "calm"
     ],
-    "(old_name) has proven {PRONOUN/m_c/self} to have one of the most invaluable traits a medicine cat can have - a level head under pressure. The stars of Silverpelt twinkle in joy and acceptance as m_c receives {PRONOUN/m_c/poss} full name and duties as a medicine cat."
+    "(old_name) has proven {PRONOUN/m_c/self} to have one of the most invaluable traits a medic can have - a level head under pressure. The stars of Silversnake twinkle in joy and acceptance as m_c receives {PRONOUN/m_c/poss} full name and duties as a medic."
   ],
   "med_17": [
     [
@@ -1599,7 +1599,7 @@
       "general_backstory",
       "careful"
     ],
-    "It is (old_name)'s attention to detail that earns {PRONOUN/m_c/object} {PRONOUN/m_c/poss} medicine cat name of m_c. {PRONOUN/m_c/subject/CAP} will serve the Clan long and well, with no one doubting the skill and knowledge of herbs {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} spent so many moons learning."
+    "It is (old_name)'s attention to detail that earns {PRONOUN/m_c/object} {PRONOUN/m_c/poss} medic name of m_c. {PRONOUN/m_c/subject/CAP} will serve the Clan long and well, with no one doubting the skill and knowledge of herbs {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} spent so many moons learning."
   ],
   "med_18": [
     [
@@ -1612,7 +1612,7 @@
       "charismatic",
       "flamboyant"
     ],
-    "(old_name)'s charming attitude does as much for {PRONOUN/m_c/poss} patients as {PRONOUN/m_c/poss} skill does. {PRONOUN/m_c/subject/CAP} will continue to heal with words and herbs as m_c, now that {PRONOUN/m_c/subject} {VERB/m_c/are/is} a full medicine cat of c_n."
+    "(old_name)'s charming attitude does as much for {PRONOUN/m_c/poss} patients as {PRONOUN/m_c/poss} skill does. {PRONOUN/m_c/subject/CAP} will continue to heal with words and herbs as m_c, now that {PRONOUN/m_c/subject} {VERB/m_c/are/is} a full medic of c_n."
   ],
   "med_19": [
     [
@@ -1625,7 +1625,7 @@
       "childish",
       "flamboyant"
     ],
-    "Though {PRONOUN/m_c/poss} actions may come off as lighthearted, (old_name) has worked hard to earn {PRONOUN/m_c/poss} name of m_c, and vows that {PRONOUN/m_c/subject}'ll protect c_n as a medicine cat. {PRONOUN/m_c/subject/CAP} {VERB/m_c/start/starts} giggling right after {PRONOUN/m_c/subject} {VERB/m_c/say/says} it, causing a few purrs of amusement from onlookers both here and in StarClan."
+    "Though {PRONOUN/m_c/poss} actions may come off as lighthearted, (old_name) has worked hard to earn {PRONOUN/m_c/poss} name of m_c, and vows that {PRONOUN/m_c/subject}'ll protect c_n as a medic. {PRONOUN/m_c/subject/CAP} {VERB/m_c/start/starts} giggling right after {PRONOUN/m_c/subject} {VERB/m_c/say/says} it, causing a few purrs of amusement from onlookers both here and in The Great Wyrm's paradise."
   ],
   "med_20": [
     [
@@ -1638,7 +1638,7 @@
       "cold",
       "gloomy"
     ],
-    "No one knows what (old_name) is thinking as {PRONOUN/m_c/subject} {VERB/m_c/receive/receives} {PRONOUN/m_c/poss} medicine cat name of m_c, only that {PRONOUN/m_c/poss} eyes are focused, clear, and as immovable as ice. No one doubts that {PRONOUN/m_c/subject} will be well suited to the heartbreaks that awaits all medicine cats."
+    "No one knows what (old_name) is thinking as {PRONOUN/m_c/subject} {VERB/m_c/receive/receives} {PRONOUN/m_c/poss} medic name of m_c, only that {PRONOUN/m_c/poss} eyes are focused, clear, and as immovable as ice. No one doubts that {PRONOUN/m_c/subject} will be well suited to the heartbreaks that awaits all medics."
   ],
   "med_21": [
     [
@@ -1650,7 +1650,7 @@
       "general_backstory",
       "compassionate"
     ],
-    "Excellent medicine cats have as much heart as they do brains, and (old_name) proves {PRONOUN/m_c/subject} {VERB/m_c/have/has} both by the time {PRONOUN/m_c/subject} {VERB/m_c/earn/earns} {PRONOUN/m_c/poss} name of m_c, proving a gentle touch does as much good as the right herbs."
+    "Excellent medics have as much heart as they do brains, and (old_name) proves {PRONOUN/m_c/subject} {VERB/m_c/have/has} both by the time {PRONOUN/m_c/subject} {VERB/m_c/earn/earns} {PRONOUN/m_c/poss} name of m_c, proving a gentle touch does as much good as the right herbs."
   ],
   "med_22": [
     [
@@ -1665,7 +1665,7 @@
       "cunning",
       "rebellious"
     ],
-    "(old_name) is so sure of {PRONOUN/m_c/poss} skill as medicine cat that {PRONOUN/m_c/subject} {VERB/m_c/ask/asks} to choose {PRONOUN/m_c/poss} own name. While it may not be traditional, no one can think of a better fitting name for {PRONOUN/m_c/object} than the one {PRONOUN/m_c/subject} chose {PRONOUN/m_c/self}, and welcome m_c warmly as a full medicine cat."
+    "(old_name) is so sure of {PRONOUN/m_c/poss} skill as medic that {PRONOUN/m_c/subject} {VERB/m_c/ask/asks} to choose {PRONOUN/m_c/poss} own name. While it may not be traditional, no one can think of a better fitting name for {PRONOUN/m_c/object} than the one {PRONOUN/m_c/subject} chose {PRONOUN/m_c/self}, and welcome m_c warmly as a full medic."
   ],
   "med_23": [
     [
@@ -1678,7 +1678,7 @@
       "daring",
       "rebellious"
     ],
-    "(old_name)'s methods are a little unconventional, but it's hard to argue with results - and (old_name) gets results. {PRONOUN/m_c/subject/CAP} {VERB/m_c/gain/gains} {PRONOUN/m_c/poss} medicine cat name of m_c, whilst the oldest medicine cat in the Clans warns {PRONOUN/m_c/object} not to do anything too risky."
+    "(old_name)'s methods are a little unconventional, but it's hard to argue with results - and (old_name) gets results. {PRONOUN/m_c/subject/CAP} {VERB/m_c/gain/gains} {PRONOUN/m_c/poss} medic name of m_c, whilst the oldest medic in the Clans warns {PRONOUN/m_c/object} not to do anything too risky."
   ],
   "med_24": [
     [
@@ -1690,7 +1690,7 @@
       "general_backstory",
       "compassionate"
     ],
-    "There's so much pain that c_n has to endure that (old_name) has decided to heal it all, no matter the cost. StarClan has accepted {PRONOUN/m_c/poss} passion and supports {PRONOUN/m_c/object} with the name of m_c, hoping that they can help ease some of the burden m_c placed on {PRONOUN/m_c/self}."
+    "There's so much pain that c_n has to endure that (old_name) has decided to heal it all, no matter the cost. The Great Wyrm has accepted {PRONOUN/m_c/poss} passion and supports {PRONOUN/m_c/object} with the name of m_c, hoping that they can help ease some of the burden m_c placed on {PRONOUN/m_c/self}."
   ],
   "med_25": [
     [
@@ -1702,7 +1702,7 @@
       "general_backstory",
       "faithful"
     ],
-    "(old_name) has known that StarClan has been watching over {PRONOUN/m_c/object} since {PRONOUN/m_c/subject} started {PRONOUN/m_c/poss} apprenticeship. {PRONOUN/m_c/subject/CAP} {VERB/m_c/are/is} given the name m_c in honor of {PRONOUN/m_c/poss} faith. Tonight of all nights, as {PRONOUN/m_c/subject} {VERB/m_c/feel/feels} star-speckled pelts weaving around {PRONOUN/m_c/object} and whispering {PRONOUN/m_c/poss} new name, {PRONOUN/m_c/subject} {VERB/m_c/know/knows} that StarClan will guide {PRONOUN/m_c/poss} pawsteps as a full medicine cat."
+    "(old_name) has known that The Great Wyrm has been watching over {PRONOUN/m_c/object} since {PRONOUN/m_c/subject} started {PRONOUN/m_c/poss} training. {PRONOUN/m_c/subject/CAP} {VERB/m_c/are/is} given the name m_c in honor of {PRONOUN/m_c/poss} faith. Tonight of all nights, as {PRONOUN/m_c/subject} {VERB/m_c/feel/feels} star-speckled scales weaving around {PRONOUN/m_c/object} and whispering {PRONOUN/m_c/poss} new name, {PRONOUN/m_c/subject} {VERB/m_c/know/knows} that The Great Wyrm will guide {PRONOUN/m_c/poss} talonsteps as a full medic."
   ],
   "med_26": [
     [
@@ -1714,7 +1714,7 @@
       "general_backstory",
       "fierce"
     ],
-    "During {PRONOUN/m_c/poss} apprenticeship, (old_name) struggled with the best way to protect c_n - with teeth or with tinctures - but now that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} m_c, {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} certain {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} made the right choice to be a medicine cat. {PRONOUN/m_c/subject/CAP} will keep practicing that battle move {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} learned... just in case."
+    "During {PRONOUN/m_c/poss} training, (old_name) struggled with the best way to protect c_n - with teeth or with tinctures - but now that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} m_c, {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} certain {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} made the right choice to be a medic. {PRONOUN/m_c/subject/CAP} will keep practicing that battle move {PRONOUN/m_c/subject}{VERB/m_c/'ve/'s} learned... just in case."
   ],
   "med_27": [
     [
@@ -1727,7 +1727,7 @@
       "insecure",
       "gloomy"
     ],
-    "As the end of {PRONOUN/m_c/poss} apprenticeship nears, (old_name) is worried StarClan won't accept {PRONOUN/m_c/object} as a full medicine cat. However, the ceremony plays out without a hitch, and m_c is honored as a skilled medicine cat."
+    "As the end of {PRONOUN/m_c/poss} training nears, (old_name) is worried The Great Wyrm won't accept {PRONOUN/m_c/object} as a full medic. However, the ceremony plays out without a hitch, and m_c is honored as a skilled medic."
   ],
   "med_28": [
     [
@@ -1740,7 +1740,7 @@
       "insecure",
       "gloomy"
     ],
-      "While the rest of the Clan may not understand it, (old_name) enjoys {PRONOUN/m_c/poss} time alone in the medicine cat den. In fact, now that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} m_c, {PRONOUN/m_c/subject} can't wait to get back to it - and away from the center of attention."
+      "While the rest of the Clan may not understand it, (old_name) enjoys {PRONOUN/m_c/poss} time alone in the medics' den. In fact, now that {PRONOUN/m_c/subject}{VERB/m_c/'re/'s} m_c, {PRONOUN/m_c/subject} can't wait to get back to it - and away from the center of attention."
   ],
   "med_29": [
     [
@@ -1752,7 +1752,7 @@
       "general_backstory",
       "insecure"
     ],
-    "Healing a sprain, comforting a bruised kit, soothing a sore elder - all of these things give (old_name) meaning in {PRONOUN/m_c/poss} life as a medicine cat. StarClan honors {PRONOUN/m_c/poss} caring heart with the name m_c."
+    "Healing a sprain, comforting a bruised hatchling, soothing a sore elder - all of these things give (old_name) meaning in {PRONOUN/m_c/poss} life as a medic. The Great Wyrm honors {PRONOUN/m_c/poss} caring heart with the name m_c."
   ],
   "med_30": [
     [
@@ -1764,7 +1764,7 @@
       "general_backstory",
       "loyal"
     ],
-    "c_n has raised and cared for (old_name), and (old_name) wants nothing more but to do the same, taking on the name m_c as a full medicine cat. {PRONOUN/m_c/subject/CAP} will be thinking of how to care for c_n until the day {PRONOUN/m_c/subject} {VERB/m_c/depart/departs} for StarClan, and maybe even after."
+    "c_n has raised and cared for (old_name), and (old_name) wants nothing more but to do the same, taking on the name m_c as a full medic. {PRONOUN/m_c/subject/CAP} will be thinking of how to care for c_n until the day {PRONOUN/m_c/subject} {VERB/m_c/depart/departs} for The Great Wyrm's Paradise, and maybe even after."
   ],
   "med_31": [
     [
@@ -1776,7 +1776,7 @@
       "general_backstory",
       "nervous"
     ],
-    "(old_name) knows all the herbs, {PRONOUN/m_c/subject} {VERB/m_c/know/knows} how to treat rat bites, but surely {PRONOUN/m_c/subject} {VERB/m_c/need/needs} to learn more? StarClan assures {PRONOUN/m_c/object} that {PRONOUN/m_c/subject}'ll do fine, and gives {PRONOUN/m_c/object} the name m_c as a sign of trust, even if m_c is sure it's still too soon."
+    "(old_name) knows all the herbs, {PRONOUN/m_c/subject} {VERB/m_c/know/knows} how to treat stitch bites, but surely {PRONOUN/m_c/subject} {VERB/m_c/need/needs} to learn more? The Great Wyrm assures {PRONOUN/m_c/object} that {PRONOUN/m_c/subject}'ll do fine, and gives {PRONOUN/m_c/object} the name m_c as a sign of trust, even if m_c is sure it's still too soon."
   ],
   "med_32": [
     [
